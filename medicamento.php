@@ -75,7 +75,7 @@
                   
                     <div class="form-group col-0">
                       <label for="num">Nome</label>
-                      <input id="nome" type="text" class="form-control" name="nome" value="<?php echo $row['nome'];?>" readonly>
+                      <input id="nome" type="text" class="form-control" name="nome" value="<?php echo utf8_decode($row['nome']);?>" readonly>
                     </div>
 					
 					<div class="row">

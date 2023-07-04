@@ -66,7 +66,7 @@
                       <tbody>
                         <tr>
                           <td><?php echo $row['idp'];?></td>
-                          <td><?php echo $row['pais'];?></td>
+                          <td><?php echo utf8_decode($row['pais']);?></td>
 						  <td><button onclick="window.location.href='<?php echo 'paises_delete.php?'.$row['idp'];?> ';" class="btn btn-primary btn-lg btn-block">Eliminar</button></td>
                         </tr>
                       </tbody>
@@ -107,7 +107,7 @@
                       <tbody>
                         <tr>
                           <td><?php echo $row['idp'];?></td>
-                          <td><?php echo $row['pais'];?></td>
+                          <td><?php echo utf8_decode($row['pais']);?></td>
 						  <td><button onclick="window.location.href='<?php echo 'paises_rest.php?'.$row['idp'];?> ';" class="btn btn-primary btn-lg btn-block">Restaurar</button></td>
                         </tr>
                       </tbody>

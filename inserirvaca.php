@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8"/>
   <meta http-equiv="content-type" content="text/html;charset=iso-8859-1"><meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
   <title>4Cows >Adicionar Vaca</title>
@@ -72,7 +73,7 @@
                     <select class="form-control" name="espec">
 						<?php $qry=mysqli_query($link,"Select * from racas where ativo=0");  
 							while ($row=mysqli_fetch_array($qry)){?>
-                        <option><?php echo $row['raca'];?></option>
+                        <option><?php echo utf8_decode($row['raca']);?></option>
 							<?php }?>
                       </select>
 
@@ -113,7 +114,7 @@
 					  <option>Desconhecido</option>
 						<?php $qry=mysqli_query($link,"Select * from pais where ativo=0");  
 							while ($row=mysqli_fetch_array($qry)){?>
-                        <option><?php echo $row['pais'];?></option>
+                        <option><?php echo utf8_decode($row['pais']);?></option>
 							<?php }?>
                       </select>
                     </div>

@@ -48,6 +48,11 @@
             </div>
           </div>
 
+         <!-- <div class="section-body">
+            <h2 class="section-title">Tables</h2>
+            <p class="section-lead">
+				Este espaço serve para Consultar os Animais existentes na Vacaria
+            </p>-->
 
             <div class="row">
               <div class="col-12 col-md-12 col-lg-12">
@@ -75,7 +80,7 @@
 										$qry = "SELECT logs.idlog, logs.idu, utilizadores.nome, logs.descricao, logs.timestamp 
 												FROM logs 
 												JOIN utilizadores ON logs.idu = utilizadores.coduser
-												ORDER BY utilizadores.timestamp DESC";//join associa o idu da tabela logs ao coduser da tabela utilizadores
+												ORDER BY logs.timestamp DESC";//join associa o idu da tabela logs ao coduser da tabela utilizadores
 										$result = mysqli_query($link, $qry);
 										?>
 
@@ -109,7 +114,7 @@
 												FROM logs 
 												JOIN utilizadores ON logs.idu = utilizadores.coduser
 												where logs.idu like '$filtro'
-												ORDER BY utilizadores.timestamp DESC";
+												ORDER BY logs.timestamp DESC";
 							$result=mysqli_query($link,$qry);
 				?>
 				<div class="card">

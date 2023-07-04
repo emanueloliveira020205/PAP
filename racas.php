@@ -67,7 +67,7 @@
                       <tbody>
                         <tr>
                           <td><?php echo $row['idr'];?></td>
-                          <td><?php echo $row['raca'];?></td>
+                          <td><?php echo utf8_decode($row['raca']);?></td>
 						  <td><button onclick="window.location.href='<?php echo 'raca_delete.php?'.$row['idr'];?> ';" class="btn btn-primary btn-lg btn-block">Eliminar</button></td>
                         </tr>
                       </tbody>
@@ -109,7 +109,7 @@
                       <tbody>
                         <tr>
                           <td><?php echo $row['idr'];?></td>
-                          <td><?php echo $row['raca'];?></td>
+                          <td><?php echo utf8_decode($row['raca']);?></td>
 						  <td><button onclick="window.location.href='<?php echo 'raca_rest.php?'.$row['idr'];?> ';" class="btn btn-primary btn-lg btn-block">Restaurar</button></td>
                         </tr>
                       </tbody>

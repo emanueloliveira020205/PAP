@@ -136,7 +136,7 @@
                            <div class="card">
                 <div class="card-header">
                   <h4>Melhores Produtoras</h4>
-                  <?php $qry=mysqli_query($link,"SELECT numero, sum(quantidade) as total_leite FROM leite GROUP BY numero order by total_leite DESC Limit 5");?>
+                  <?php $qry=mysqli_query($link,"SELECT numero, sum(quantidade) as total_leite FROM leite GROUP BY numero order by total_leite DESC Limit 4");?>
                 </div>
                 <div class="card-body p-0">
                   <div class="table-responsive table-invoice">
@@ -147,6 +147,7 @@
                         <th>Quantidade</th>
                         <th>Estado Atual</th>
                         <th></th>
+						<br>
                       </tr>
                       <?php while ($row=mysqli_fetch_array($qry)){?>
                       <tr>

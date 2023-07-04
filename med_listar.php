@@ -61,7 +61,8 @@
                         <tr>
                           <th scope="col">Nome</th>
                           <th scope="col">Validade</th>
-                          <th scope="col">Intervalo de Segurança(dias)</th>
+                          <th scope="col">Intervalo 
+						  de Segurança(dias)</th>
                           <th scope="col">Quantidade Disponível(ml)</th>
                         </tr>
                       </thead>
@@ -70,7 +71,7 @@
                         <tr>
 						<?php $url = 'medicamento.php?'.$row['idm']; ?>
 						<?php $url2 = 'med_delete.php?'.$row['idm']; ?>
-                          <td><?php echo $row['nome'];?></td>
+                          <td><?php echo utf8_decode($row['nome']);?></td>
                           <td><?php echo $row['validade'];?></td>
                           <td><?php echo $row['intseg'];?></td>
 						  <td><?php echo $row['qdisp'];?></td>

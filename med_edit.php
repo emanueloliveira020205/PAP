@@ -48,7 +48,7 @@
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1><?php echo $row['nome'];?></h1>
+            <h1><?php echo utf8_decode($row['nome']);?></h1>
             <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="admin.php">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Medicamentos</a></div>
@@ -67,7 +67,7 @@
                   
                     <div class="form-group col-0">
                       <label for="num">Nome</label>
-                      <input id="nome" type="text" class="form-control" name="nome" value="<?php echo $row['nome'];?>" >
+                      <input id="nome" type="text" class="form-control" name="nome" value="<?php echo utf8_decode($row['nome']);?>" >
                     </div>
 					
 					<div class="row">

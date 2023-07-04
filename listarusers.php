@@ -101,7 +101,7 @@
                     </table>
                 </div>
 			<?php } else { 
-							$qry="Select * from utilizadores where tipo='$estado' && ativo=0 order by coduser";
+							$qry="Select * from utilizadores where tipo='$estado' and ativo=0 order by coduser";
 							$result=mysqli_query($link,$qry);
 				?>
 				<div class="card">

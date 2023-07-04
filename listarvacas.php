@@ -105,7 +105,7 @@
                     </table>
                 </div>
 			<?php } else { 
-							$qry="Select * from vacas where estado='$estado' order by numero";
+							$qry="Select * from vacas where estado='$estado' and ativo = 0 order by numero";
 							$result=mysqli_query($link,$qry);
 				?>
 				<div class="card">

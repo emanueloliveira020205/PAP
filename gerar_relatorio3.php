@@ -60,6 +60,6 @@ if (isset($_POST['table']) && isset($_POST['estado']) && isset($_POST['data1']) 
     // Gera o PDF
    //header('Content-Type: application/pdf');
    $data=date("Y-m-d");
-    $pdf->Output($table.'_'.$data.'.pdf', 'D');s
+    $pdf->Output($table.'_'.$data.'.pdf', 'D');
 }
 ?>
